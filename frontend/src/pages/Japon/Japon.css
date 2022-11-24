@@ -310,10 +310,16 @@
     align-items: center;
     flex-direction: column;
     margin-top: 3em;
+<<<<<<< HEAD
     margin-bottom: 3em;
     gap: 1em;
     margin-left: 8em;
     margin-right: 8em;
+=======
+    margin: 8em;
+    margin-bottom: 3em;
+    gap: 1em;
+>>>>>>> 0f8bab3216907bf30c66d8ee4015a44c169fd64e
   }
 
   .image33 {
