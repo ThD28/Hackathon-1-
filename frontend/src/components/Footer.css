@@ -20,7 +20,7 @@ footer {
   
   .icons {
     display: flex;
-    justify-content: left;
+    justify-content: right;
     gap: 2rem;
     align-items: center;
     padding: 10px;
