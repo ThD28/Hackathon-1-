@@ -1,3 +1,4 @@
+import MyList from "../../components/MyList/MyList";
 import "./Voyage.css";
 
 const myTravelImage = [
@@ -80,6 +81,9 @@ const Voyage = () => {
             <h2>My List</h2>
           </button>
         </div>
+      </div>
+      <div className="MyTravel-MyList">
+        <MyList />
       </div>
     </div>
   );
