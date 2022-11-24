@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Japon from "@pages/Japon";
-import Voyage from "@pages/Voyage";
-import Home from "@pages/Home";
+import Japon from "@pages/Japon/Japon";
+import Voyage from "@pages/Voyage/Voyage";
+import Home from "@pages/Home/Home";
 import Footer from "@components/Footer/Footer";
 import Header from "@components/Header/Header";
 

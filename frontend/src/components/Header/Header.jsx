@@ -15,7 +15,7 @@ const Header = () => {
           </li>
           <li className="navbar__item">
             <Link to="/Japon" className="navbar__link">
-              Japon{" "}
+              Japan{" "}
             </Link>
           </li>
           <li className="navbar__item">
