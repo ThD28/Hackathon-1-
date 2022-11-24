@@ -9,7 +9,7 @@ const MyList = () => {
   return (
     <div className="MyList-Container">
       <div className="MyList-Title">
-        <h2>My Trips :</h2>
+        <h2>My Trips</h2>
       </div>
       <div className="MyList-Text">
         <button type="button" onClick={handleAccor}>
