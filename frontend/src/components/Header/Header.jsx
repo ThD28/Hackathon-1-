@@ -33,7 +33,10 @@ const Header = () => {
         >
           <nav className="navbar">
             <p onClick={handleShowLinks}>Destination </p>
-            <ul className="navbar__links_slideInDown" style={{ backgroundColor: navStyle() }}>
+            <ul
+              className="navbar__links_slideInDown"
+              style={{ backgroundColor: navStyle() }}
+            >
               <li>
                 <NavLink to="/Japon" onClick={handleShowLinks}>
                   Japon
@@ -46,9 +49,7 @@ const Header = () => {
           </nav>
         </section>
         <p className="navbar_item">
-          <NavLink to="/Voyage">
-            Voyage
-          </NavLink>
+          <NavLink to="/Voyage">Voyage</NavLink>
         </p>
       </div>
     </div>

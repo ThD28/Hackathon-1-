@@ -16,6 +16,7 @@
 
 .MyTravel-Title > h2 {
   color: #232323;
+  font-family: "Permanent Marker", cursive;
 }
 
 .MyTravel-Image {
@@ -116,7 +117,7 @@
     padding-bottom: 1.5em;
   }
   .MyTravel-Title > h2 {
-    font-size: 40px;
+    font-size: 60px;
   }
   .itemBg {
     height: 13em;
