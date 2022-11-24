@@ -52,7 +52,7 @@ const Voyage = () => {
     <div className="Voyage-Container">
       <div className="MyTravel-Container">
         <div className="MyTravel-Title">
-          <h2>My Travel</h2>
+          <h2>Trips</h2>
         </div>
         <div className="MyTravel-Image">
           {myTravelImage.map((item) => (
@@ -77,8 +77,8 @@ const Voyage = () => {
           ))}
         </div>
         <div className="MyTravel-Button">
-          <button type="button" className="Button-MyList">
-            <h2>My List</h2>
+          <button type="button" className="btn-grad">
+            <h2>Create</h2>
           </button>
         </div>
       </div>
