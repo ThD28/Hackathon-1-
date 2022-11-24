@@ -3,6 +3,7 @@
   width: 100%;
   height: auto;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 1.1em;
 }
 
 .MyTravel-Title {
@@ -80,6 +81,12 @@
   border-radius: 3px;
 }
 
+.MyTravel-MyList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .MyTravel-Title {
     padding-top: 1.5em;
@@ -96,5 +103,9 @@
   }
   .Button-MyList {
     font-size: 20px;
+  }
+  .MyTravel-MyList {
+    margin-top: 2em;
+    padding-bottom: 2em;
   }
 }
