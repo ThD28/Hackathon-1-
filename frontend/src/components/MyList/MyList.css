@@ -4,6 +4,9 @@
   border-radius: 4px;
   height: auto;
   padding: 0.5em;
+  border-radius: 43px;
+  background: #232323;
+  box-shadow: -5px 5px 14px #232323, 5px -5px 14px #232323;
 }
 
 .MyList-Container h2 {
