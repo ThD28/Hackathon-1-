@@ -15,6 +15,8 @@
 .home h1 {
   background-size: cover;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   background-image: linear-gradient(
     to right,
