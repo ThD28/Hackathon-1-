@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .home {
   background-image: url(../../assets/home.jpg);
   background-size: cover;
@@ -11,27 +13,61 @@
 }
 
 .home h1 {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #1f1c2c 0%,
+    #928dab 51%,
+    #1f1c2c 100%
+  );
+  font-family: "Permanent Marker", cursive;
   font-size: 6em;
 }
 
 .homeButton {
   width: 6em;
   height: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #1f1c2c 0%,
+    #757383 51%,
+    #1f1c2c 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-family: "Permanent Marker", cursive;
+}
+
+.homeButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
   .home {
     background-position: center;
+    gap: 3em;
   }
 
   .home h1 {
-    font-size: 6em;
+    font-size: 10em;
   }
 
   .homeButton {
-    width: 15em;
-    height: 5em;
+    width: 24em;
+    height: 6em;
+    font-size: 1em;
   }
 }
