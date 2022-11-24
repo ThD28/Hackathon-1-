@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./header.css";
-import logoAvion from "../../assets/avion.png";
 // import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -12,15 +11,13 @@ const Header = () => {
 
   return (
     <div className="navBar-tel">
-      <img src={logoAvion} alt="avion" />
+      <span>Travel Maker</span>
       <div className="destination-travel">
         <section
           className={`navbar ${showLinks ? "show-Navbar" : "Hide-Navbar"}`}
         >
           <nav className="navbar">
-            <button type="button" onClick={handleShowLinks}>
-              Destination{" "}
-            </button>
+            <p onClick={handleShowLinks}>Destination </p>
             <ul className="navbar__links_slideInDown">
               <li>Japon</li>
               <li>France</li>
@@ -29,9 +26,7 @@ const Header = () => {
             </ul>
           </nav>
         </section>
-        <ul>
-          <li className="navbar_item">Voyage</li>
-        </ul>
+        <p className="navbar_item">Voyage</p>
       </div>
     </div>
   );
