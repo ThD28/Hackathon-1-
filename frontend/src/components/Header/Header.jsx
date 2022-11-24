@@ -1,31 +1,39 @@
-import "@components/Header/Header.css";
-import { Link } from "react-router-dom";
-import logoAvion from "@assets/avion.png";
+import { useState } from "react";
+import "./header.css";
+import logoAvion from "../../assets/avion.png";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [showLinks, setShowLInks] = useState(false);
+
+  const handleShowLinks = () => {
+    setShowLInks(!showLinks);
+  };
+
   return (
-    <section id="telnav">
-      <nav className="navbar">
-        <img src={logoAvion} alt="avion" />
-        <ul className="navbar__links_slideInDown">
-          <li className="navbar__item">
-            <Link to="/" className="navbar__link">
-              Home{" "}
-            </Link>
-          </li>
-          <li className="navbar__item">
-            <Link to="/Japon" className="navbar__link">
-              Japon{" "}
-            </Link>
-          </li>
-          <li className="navbar__item">
-            <Link to="/Voyage" className="navbar__link">
-              Voyage
-            </Link>
-          </li>
+    <div className="navBar-tel">
+      <img src={logoAvion} alt="avion" />
+      <div className="destination-travel">
+        <section
+          className={`navbar ${showLinks ? "show-Navbar" : "Hide-Navbar"}`}
+        >
+          <nav className="navbar">
+            <button type="button" onClick={handleShowLinks}>
+              Destination{" "}
+            </button>
+            <ul className="navbar__links_slideInDown">
+              <li>Japon</li>
+              <li>France</li>
+              <li>Corée du Nord</li>
+              <li>Canada</li>
+            </ul>
+          </nav>
+        </section>
+        <ul>
+          <li className="navbar_item">Voyage</li>
         </ul>
-      </nav>
-    </section>
+      </div>
+    </div>
   );
 };
 
