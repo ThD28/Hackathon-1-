@@ -1,4 +1,7 @@
 import "./Japon.css";
+import Image1 from "@assets/mont-fuji.jpg";
+import Image2 from "@assets/fushimi-inari.jpg";
+import Image3 from "@assets/himeji.jpg";
 import React, { useState } from "react";
 
 const Japon = () => {
@@ -103,11 +106,66 @@ const Japon = () => {
             />
           </div>
         </div>
-        <p>
-          Japan is an island country in East Asia, located between the Pacific
-          Ocean and the Sea of Japan, east of China, South Korea, North Korea
-          and Russia, and north of Taiwan.{" "}
-        </p>
+        <div className="info">
+          <p>
+            Japan is an island country in East Asia, located between the Pacific
+            Ocean and the Sea of Japan, east of China, South Korea, North Korea
+            and Russia, and north of Taiwan.{" "}
+          </p>
+        </div>
+        <div className="image1-text1">
+          <div className="image1">
+            <img className="image11" src={Image1} alt="montfuji" />
+          </div>
+          <div className="text1">
+            <p className="text-bas">
+              Mount Fuji (富士山, Fujisan, Japanese:), or Fugaku, located on the
+              island of Honshū, is the highest mountain in Japan, with a summit
+              elevation of 3,776.24 m. It is the second-highest volcano located
+              on an island in Asia (after Mount Kerinci on the island of
+              Sumatra), and seventh-highest peak of an island on Earth. Mount
+              Fuji is an active stratovolcano that last erupted from 1707 to
+              1708. The mountain is located about 100 km southwest of Tokyo and
+              is visible from there on clear days. Mount Fuji's exceptionally
+              symmetrical cone, which is covered in snow for about five months
+              of the year, is commonly used as a cultural icon of Japan and it
+              is frequently depicted in art and photography, as well as visited
+              by sightseers and climbers.
+            </p>
+          </div>
+        </div>
+        <div className="image2-text2">
+          <div className="image2">
+            <img className="image22" src={Image2} alt="fushimi" />
+          </div>
+          <div className="text2">
+            <p className="text-bas">
+              Fushimi Inari-taisha (伏見稲荷大社) is the head shrine of the kami
+              Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture, Japan. The
+              shrine sits at the base of a mountain also named Inari which is
+              233 metres above sea level, and includes trails up the mountain to
+              many smaller shrines which span 4 kilometres and take
+              approximately 2 hours to walk up.
+            </p>
+          </div>
+        </div>
+        <div className="image3-text3">
+          <div className="image3">
+            <img className="image33" src={Image3} alt="himiji" />
+          </div>
+          <div className="text3">
+            <p className="text-bas">
+              Himeji Castle (姫路城, Himeji-jō) is a hilltop Japanese castle
+              complex situated in the city of Himeji which is located in the
+              Hyōgo Prefecture of Japan. The castle is regarded as the finest
+              surviving example of prototypical Japanese castle architecture,
+              comprising a network of 83 rooms with advanced defensive systems
+              from the feudal period. The castle is frequently known as
+              Hakuro-jō or Shirasagi-jō because of its brilliant white exterior
+              and supposed resemblance to a bird taking flight.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
