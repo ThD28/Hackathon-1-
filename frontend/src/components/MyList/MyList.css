@@ -1,0 +1,71 @@
+.MyList-Container {
+  width: 90%;
+  background-color: #232323;
+  border-radius: 4px;
+  height: auto;
+  padding: 0.5em;
+}
+
+.MyList-Container h2 {
+  margin-top: 0.25em;
+  color: #f2e9e4;
+  font-size: 25px;
+}
+
+.MyList-Text button {
+  margin-top: 1em;
+  text-align: left;
+  padding-left: 0.5em;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.showAccor {
+  display: block;
+  color: #f2e9e4;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 2px solid #f2e9e4;
+  border-radius: 8px;
+}
+
+.hideAccor {
+  display: none;
+}
+
+.Accor-Country span {
+  font-weight: bold;
+}
+
+.Accor-City span {
+  font-weight: bold;
+}
+
+.Accor-Message span {
+  font-weight: bold;
+}
+
+.Accor-Image {
+  width: 96%;
+  height: 15em;
+  margin: 0.5em;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .MyList-Container {
+    width: 60%;
+  }
+  .MyList-Container h2 {
+    margin-top: 0.5em;
+    font-size: 30px;
+  }
+  .MyList-Text button {
+    font-size: 28px;
+  }
+  .showAccor {
+    font-size: 25px;
+  }
+}
