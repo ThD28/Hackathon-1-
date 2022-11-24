@@ -2,10 +2,9 @@
 
 .title-japon {
     padding-right: 10px;
+    background-image: url (./assets/japon.jpg);
 }
 
-.img-title {
-    background-image: url ("../../assets/japon.jpg");
-}
+
 
 
