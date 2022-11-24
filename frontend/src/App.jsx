@@ -3,6 +3,7 @@ import Japon from "@pages/Japon";
 import Voyage from "@pages/Voyage";
 // import Home from "@pages/Home";
 import Footer from "@components/Footer";
+import Header from "@components/Header";
 
 import "./App.css";
 

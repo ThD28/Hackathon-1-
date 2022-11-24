@@ -1,30 +1,29 @@
 footer {
-    background-color: #c1694f;
-    /* display: flex;
+  background-color: #c1694f;
+  /* display: flex;
       justify-content:flex-end; */
-  }
-  
-  
-  .fa-facebook,
-  .fa-instagram,
-  .fa-mastodon {
-    height: 40px;
-  }
-  
-  .fa-facebook,
-  .fa-instagram,
-  .fa-mastodon,
-  .icons p {
-    color: black;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: left;
-    gap: 2rem;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  @media screen and (min-width: 768px) {
-  }
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-mastodon {
+  height: 40px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-mastodon,
+.icons p {
+  color: black;
+}
+
+.icons {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+}
