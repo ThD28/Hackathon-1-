@@ -4,6 +4,7 @@
   height: auto;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 1.1em;
+  overflow: hidden;
 }
 
 .MyTravel-Title {
@@ -63,10 +64,32 @@
   transition: 0.6s;
 }
 
-.MyTravel-Button {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1em;
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #283048 0%,
+    #859398 51%,
+    #283048 100%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding: 8px 25px;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .Button-MyList {
@@ -101,8 +124,9 @@
   .MyTravel-Image {
     padding-bottom: 3em;
   }
-  .Button-MyList {
-    font-size: 20px;
+  .btn-grad {
+    padding: 15px 40px;
+    font-size: 15px;
   }
   .MyTravel-MyList {
     margin-top: 2em;
