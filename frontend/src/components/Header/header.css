@@ -18,7 +18,7 @@
   font-family: "Permanent Marker", cursive;
 }
 
-.navBar-tel a{
+.navBar-tel a {
   list-style: none;
   text-decoration: none;
   color: white;
@@ -69,8 +69,23 @@
 }
 
 .show-Navbar ul {
+  animation: rotateMenu 400ms ease-in-out forwards;
+  transform-origin: top center;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 
 .destination-travel {
