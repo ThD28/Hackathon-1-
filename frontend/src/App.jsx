@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Japon from "@pages/Japon";
-import Voyage from "@pages/Voyage";
+import Japon from "./pages/Japon";
+import Voyage from "./pages/Voyage";
 // import Home from "@pages/Home";
-import Footer from "@components/Footer";
-import Header from "@components/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
 
 import "./App.css";
 
