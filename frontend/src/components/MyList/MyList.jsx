@@ -23,11 +23,11 @@ const MyList = () => {
   return (
     <div className="MyList-Container">
       <div className="MyList-Title">
-        <h2>My Trips :</h2>
+        <h2>My Trips</h2>
       </div>
       <div className="MyList-Text">
         {travels.map((travel) => (
-          <>
+          <div>
             <button type="button" onClick={handleAccor}>
               Name : {travel.Name}
             </button>
@@ -46,7 +46,7 @@ const MyList = () => {
               </div>
               <div className="Accor-Image" />
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
