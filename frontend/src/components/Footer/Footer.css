@@ -1,7 +1,23 @@
-footer {
-  background-color: #c1694f;
-  /* display: flex;
-      justify-content:flex-end; */
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+}
+
+.foot p {
+  margin-left: 2em;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin-right: 2em;
 }
 
 .fa-facebook,
