@@ -4,6 +4,7 @@ import Voyage from "@pages/Voyage/Voyage";
 import Home from "@pages/Home/Home";
 import Footer from "@components/Footer/Footer";
 import Header from "@components/Header/Header";
+import Scroll from "@components/Skroll/Scroll";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
 
         <Route exact path="/Voyage" element={<Voyage />} />
       </Routes>
+      <Scroll />
       {pathname !== "/" && <Footer />}
     </div>
   );
