@@ -1,4 +1,4 @@
-import "./header.css"
+import "./header.css";
 
 const Header = () => {
   return (
@@ -9,12 +9,8 @@ const Header = () => {
           <span className="slider round" />
         </label>
         <ul className="navbar__links slideInDown  ">
-          <li className="navbar__item">
-            Destination
-          </li>
-          <li className="navbar__item">
-            Voyage
-          </li>
+          <li className="navbar__item">Destination</li>
+          <li className="navbar__item">Voyage</li>
         </ul>
         <button type="button" className="navbar__burger">
           <span className="burger__bar"> </span>
