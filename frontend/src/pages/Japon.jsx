@@ -1,11 +1,5 @@
 import "./Japon.css";
 
-const Japon = () => {
-  return (
-    <div>
-      <h3> Le Japon et ses lieux </h3>
-    </div>
-  );
-};
+const Japon = () => {};
 
 export default Japon;
