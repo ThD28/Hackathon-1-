@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Japon from "@pages/Japon";
 import Voyage from "@pages/Voyage";
 import Home from "@pages/Home";
+import Footer from "@components/Footer";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
 
         <Route exact path="/Voyage" element={<Voyage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
