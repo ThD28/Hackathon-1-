@@ -7,7 +7,7 @@
   box-shadow: -5px 5px 8px #77a2d4, 5px -5px 8px #9bd2ff;
   height: auto;
   padding: 0.5em;
-  border-radius: 43px;
+  border-radius: 35px;
 }
 
 .MyList-Container h2 {
@@ -22,34 +22,31 @@
 
 .MyList-Text button {
   margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0.8em;
   text-align: left;
   padding-left: 0.5em;
   font-size: 18px;
-  width: 100%;
+  width: 95%;
   font-weight: bold;
+  border-radius: 8px;
 }
 
 .showAccor {
   display: block;
   color: #f2e9e4;
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 1.5em;
   border: 2px solid #f2e9e4;
-  border-radius: 8px;
+  border-radius: 35px;
 }
 
 .hideAccor {
   display: none;
 }
 
-.Accor-Country span {
-  font-weight: bold;
-}
-
-.Accor-City span {
-  font-weight: bold;
-}
-
+.Accor-Country span,
+.Accor-City span,
 .Accor-Message span {
   font-weight: bold;
 }
@@ -71,6 +68,7 @@
     font-size: 30px;
   }
   .MyList-Text button {
+    height: 2em;
     font-size: 28px;
   }
   .showAccor {

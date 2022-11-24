@@ -15,6 +15,8 @@ const Footer = () => {
         return `rgba(188, 0, 45, 0.85)`;
       case "/Voyage":
         return `rgba(137, 196, 244, 0.85 )`;
+      case "/France":
+        return `rgba(0, 33, 83, 0.85)`;
       default:
         return `blue`;
     }
