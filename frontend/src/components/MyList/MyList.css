@@ -1,18 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .MyList-Container {
   width: 90%;
-  background-color: #232323;
-  border-radius: 4px;
+  background-color: #89baf4;
+  border-radius: 10px;
+  box-shadow: -5px 5px 8px #77a2d4, 5px -5px 8px #9bd2ff;
   height: auto;
   padding: 0.5em;
   border-radius: 43px;
-  background: #232323;
-  box-shadow: -5px 5px 14px #232323, 5px -5px 14px #232323;
 }
 
 .MyList-Container h2 {
   margin-top: 0.25em;
   color: #f2e9e4;
   font-size: 22px;
+}
+
+.MyList-Title {
+  text-align: center;
 }
 
 .MyList-Text button {
