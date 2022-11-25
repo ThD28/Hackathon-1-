@@ -108,7 +108,7 @@
 .div-container-fluid p.show {
   opacity: 0.9;
   color: #000000;
-  background-color: rgba(49, 226, 83);
+  background-color: #ed3c57;
   border-radius: 7px;
   transition: all 0.2s ease-in-out;
   height: 269.9px;
