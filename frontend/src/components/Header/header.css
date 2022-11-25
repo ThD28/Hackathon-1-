@@ -123,7 +123,7 @@
 }
 
 .navbar button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
 }
@@ -131,6 +131,18 @@
 @media screen and (min-width: 768px) {
   .navBar-tel p {
     font-size: 2em;
+    margin-left: 1em;
+  }
+  
+  .navbar {
+    z-index: 200000000000000000000000;
+    display: flex;
+    margin-right: 3em;
+    width: 3em;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navBar-tel span {
@@ -139,5 +151,17 @@
 
   .destination-travel nav {
     margin-top: 1.6em;
+  }
+  .show-Navbar ul {
+    animation: rotateMenu 400ms ease-out forwards;
+    transform-origin: top center;
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    font-family: "Permanent Marker", cursive;
+    padding: 2em;
+    border-radius: 8px 8px 16px 16px;
+    font-size: 1.2em;
+    text-align: center;
   }
 }
