@@ -219,14 +219,21 @@
   font-size: 1em;
 }
 
-.meteo-info {
-  padding-bottom: 0.5em;
-  width: 7em;
+.meteo-info-jp {
+  border: 1px solid black;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgba(188, 0, 45, 0.85);
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding-bottom: 0.25em;
 }
 
-.meteo-info a {
+.meteo-info-jp span {
   text-decoration: none;
-  color: black;
+  color: white;
   margin-right: 0.5em;
 }
 

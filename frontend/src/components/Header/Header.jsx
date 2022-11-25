@@ -41,7 +41,9 @@ const Header = () => {
           className={`navbar ${showLinks ? "show-Navbar" : "Hide-Navbar"}`}
         >
           <nav className="navbar">
-            <p onClick={handleShowLinks}>Destination </p>
+            <p className="destination" onClick={handleShowLinks}>
+              Destination{" "}
+            </p>
             <ul
               className="navbar__links_slideInDown"
               style={{ backgroundColor: navStyle() }}

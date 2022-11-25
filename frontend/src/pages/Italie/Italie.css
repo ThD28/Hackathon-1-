@@ -137,6 +137,24 @@
   width: 90%;
 }
 
+.meteo-info-it {
+  border: 1px solid black;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgba(49, 226, 83, 0.85);
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.meteo-info-it span {
+  text-decoration: none;
+  color: white;
+  margin-right: 0.5em;
+}
+
 @media screen and (min-width: 768px) {
   .japan-body {
     background-position: center;

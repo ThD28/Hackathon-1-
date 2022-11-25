@@ -13,17 +13,7 @@
 }
 
 .home h1 {
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  background-image: linear-gradient(
-    to right,
-    #1f1c2c 0%,
-    #928dab 51%,
-    #1f1c2c 100%
-  );
+  color: white;
   font-family: "Permanent Marker", cursive;
   font-size: 6em;
 }
