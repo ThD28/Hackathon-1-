@@ -59,7 +59,6 @@ const Header = () => {
                   Italie
                 </NavLink>
               </li>
-              <li>Canada</li>
             </ul>
           </nav>
         </section>
