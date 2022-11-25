@@ -21,6 +21,10 @@ const Formulaire = ({ open, children, onClosePopUp }) => {
               <input type="text" name="city" required />
             </div>{" "}
             <div class="input-container">
+              <label>Message</label>
+              <input type="text" name="message" required />
+            </div>{" "}
+            <div class="input-container">
               <label>Image</label>
               <input type="text" name="image" required />
             </div>{" "}
