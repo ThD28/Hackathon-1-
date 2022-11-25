@@ -14,6 +14,8 @@ const Header = () => {
         return `rgba(0, 33, 83, 0.85)`;
       case "/Italie":
         return `rgba(49, 226, 83, 0.85)`;
+      case "/Italie":
+        return `rgba(49, 226, 83, 0.85)`;
       case "/Voyage":
         return `rgba(137, 196, 244, 0.85 )`;
       default:
@@ -39,7 +41,9 @@ const Header = () => {
           className={`navbar ${showLinks ? "show-Navbar" : "Hide-Navbar"}`}
         >
           <nav className="navbar">
-            <p onClick={handleShowLinks}>Destination </p>
+            <p className="destination" onClick={handleShowLinks}>
+              Destination{" "}
+            </p>
             <ul
               className="navbar__links_slideInDown"
               style={{ backgroundColor: navStyle() }}
