@@ -6,9 +6,7 @@ import Home from "@pages/Home/Home";
 import Footer from "@components/Footer/Footer";
 import Header from "@components/Header/Header";
 import Scroll from "@components/Skroll/Scroll";
-
 import "./App.css";
-import France from "@components/France/France";
 
 function App() {
   const { pathname } = useLocation();
