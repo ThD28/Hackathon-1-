@@ -57,10 +57,15 @@
   font-weight: bold;
 }
 
+.Accor-Button button {
+  width: 4.3em;
+}
+
 .Accor-Image {
   width: 96%;
   height: 15em;
   margin: 0.5em;
+  margin-top: 1.5em;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg");
   background-size: cover;
   border-radius: 20px;
