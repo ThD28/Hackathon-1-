@@ -1,5 +1,4 @@
-import { useLocation } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./header.css";
 // import { Link } from "react-router-dom";

@@ -1,4 +1,6 @@
+import { useState } from "react";
 import MyList from "../../components/MyList/MyList";
+import Formulaire from "@components/Formulaire/Formulaire";
 import "./Voyage.css";
 
 const myTravelImage = [
@@ -48,6 +50,12 @@ const myTravelImage2 = [
 ];
 
 const Voyage = () => {
+  const [isOpenPopUp, setIsOpenPopUp] = useState(false);
+
+  function handleClick(e) {
+    e.preventDefault();
+    setIsOpenPopUp(true);
+  }
   return (
     <div className="Voyage-Container">
       <div className="MyTravel-Container">
@@ -77,12 +85,16 @@ const Voyage = () => {
           ))}
         </div>
         <div className="MyTravel-Button">
-          <button type="button" className="btn-grad">
-            <h2>Create</h2>
+          <button type="button" className="btn-grad" onClick={handleClick}>
+            Create
           </button>
         </div>
       </div>
       <div className="MyTravel-MyList">
+        <Formulaire
+          open={isOpenPopUp}
+          onClosePopUp={() => setIsOpenPopUp(false)}
+        />
         <MyList />
       </div>
     </div>
