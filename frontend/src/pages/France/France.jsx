@@ -1,7 +1,7 @@
 import "./France.css";
-import Image1 from "@assets/mont-fuji.jpg";
-import Image2 from "@assets/fushimi-inari.jpg";
-import Image3 from "@assets/himeji.jpg";
+import Image11 from "@assets/eiffel.jpg";
+import Image22 from "@assets/notredame.jpg";
+import Image33 from "@assets/chateauversailles.jpg";
 import React, { useState } from "react";
 
 const France = () => {
@@ -56,7 +56,7 @@ const France = () => {
 
   return (
     <div className="japan">
-      <div className="japan-body">
+      <div className="france-body">
         <h2 className="title-japon">France</h2>
       </div>
       <div className="history">
@@ -116,7 +116,7 @@ const France = () => {
         </div>
         <div className="image1-text1">
           <div className="image1">
-            <img className="image11" src={Image1} alt="montfuji" />
+            <img className="image11" src={Image11} alt="eiffel" />
           </div>
           <div className="text1">
             <p className="text-bas">
@@ -133,7 +133,7 @@ const France = () => {
         </div>
         <div className="image2-text2">
           <div className="image2">
-            <img className="image22" src={Image2} alt="fushimi" />
+            <img className="image22" src={Image22} alt="notredame" />
           </div>
           <div className="text2">
             <p className="text-bas">
@@ -147,7 +147,7 @@ const France = () => {
         </div>
         <div className="image3-text3">
           <div className="image3">
-            <img className="image33" src={Image3} alt="himiji" />
+            <img className="image33" src={Image33} alt="himiji" />
           </div>
           <div className="text3">
             <p className="text-bas">
