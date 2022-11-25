@@ -2,6 +2,7 @@ import { useState } from "react";
 import MyList from "../../components/MyList/MyList";
 import Formulaire from "@components/Formulaire/Formulaire";
 import "./Voyage.css";
+import DeleteForm from "@components/DeleteForm/DeleteForm";
 
 const myTravelImage = [
   {
@@ -51,10 +52,15 @@ const myTravelImage2 = [
 
 const Voyage = () => {
   const [isOpenPopUp, setIsOpenPopUp] = useState(false);
+  const [isOpenPopUp2, setIsOpenPopUp2] = useState(false);
 
   function handleClick(e) {
     e.preventDefault();
     setIsOpenPopUp(true);
+  }
+  function handleClick2(e) {
+    e.preventDefault();
+    setIsOpenPopUp2(true);
   }
   return (
     <div className="Voyage-Container">
@@ -88,12 +94,19 @@ const Voyage = () => {
           <button type="button" className="btn-grad" onClick={handleClick}>
             Create
           </button>
+          <button type="button" className="btn-grad" onClick={handleClick2}>
+            Delete
+          </button>
         </div>
       </div>
       <div className="MyTravel-MyList">
         <Formulaire
           open={isOpenPopUp}
           onClosePopUp={() => setIsOpenPopUp(false)}
+        />
+        <DeleteForm
+          open={isOpenPopUp2}
+          onClosePopUp={() => setIsOpenPopUp2(false)}
         />
         <MyList />
       </div>

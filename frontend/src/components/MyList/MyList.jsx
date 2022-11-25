@@ -45,6 +45,9 @@ const MyList = () => {
                 {travel.Message}
               </div>
               <div className="Accor-Image" />
+              <div className="Accor-Button">
+                <button type="button">Delete</button>
+              </div>
             </div>
           </div>
         ))}

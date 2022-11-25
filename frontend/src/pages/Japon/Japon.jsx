@@ -2,7 +2,8 @@ import "./Japon.css";
 import Image1 from "@assets/mont-fuji.jpg";
 import Image2 from "@assets/fushimi-inari.jpg";
 import Image3 from "@assets/himeji.jpg";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Japon = () => {
   const [indexSlider, setIndexSlider] = useState(0);
@@ -35,6 +36,62 @@ const Japon = () => {
         "Teuchi is a resident of Konoha and the owner of Ichiraku Ramen.He and his daughter, Ayame, consider Naruto Uzumaki their best customer and always treat him well.Naruto’s favorite dish, narutomaki, is a Japanese culinary decoration based on fish pâté, steamed, white with an orange pink spiral inside. ",
     },
   ];
+
+  const weatherTab = {
+    main: {
+      temp: 300,
+    },
+    weather: [
+      {
+        icon: "10d",
+      },
+    ],
+  };
+
+  const [weatherApi, setWeatherApi] = useState(weatherTab);
+  const [weatherApi2, setWeatherApi2] = useState(weatherTab);
+  const [weatherApi3, setWeatherApi3] = useState(weatherTab);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=35.4874565&lon=138.8078281&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi(data);
+        console.error(data);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=35.021041&lon=135.7556075&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi2(data);
+        console.error(data);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=34.8153529&lon=134.6854793&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi3(data);
+        console.error(data);
+      });
+  }, []);
+
+  const urlMeteo = `https://openweathermap.org/img/wn/${weatherApi.weather[0].icon}@2x.png`;
+  const tempDegree1 = weatherApi.main.temp - 273.15;
+  const urlMeteo2 = `https://openweathermap.org/img/wn/${weatherApi2.weather[0].icon}@2x.png`;
+  const tempDegree2 = weatherApi2.main.temp - 273.15;
+  const urlMeteo3 = `https://openweathermap.org/img/wn/${weatherApi3.weather[0].icon}@2x.png`;
+  const tempDegree3 = weatherApi3.main.temp - 273.15;
 
   const handlePrevious = () => {
     setShowText(false);
@@ -119,6 +176,15 @@ const Japon = () => {
           </div>
           <div className="text1">
             <p className="text-bas">
+              <div className="meteo-info-jp">
+                <span>{tempDegree1.toFixed(2)}°C</span>
+                <img
+                  src={urlMeteo}
+                  alt={weatherApi.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               Mount Fuji (富士山, Fujisan, Japanese:), or Fugaku, located on the
               island of Honshū, is the highest mountain in Japan, with a summit
               elevation of 3,776.24 m. It is the second-highest volcano located
@@ -140,6 +206,15 @@ const Japon = () => {
           </div>
           <div className="text2">
             <p className="text-bas">
+              <div className="meteo-info-jp">
+                <span>{tempDegree2.toFixed(2)}°C</span>
+                <img
+                  src={urlMeteo2}
+                  alt={weatherApi2.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               Fushimi Inari-taisha (伏見稲荷大社) is the head shrine of the kami
               Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture, Japan. The
               shrine sits at the base of a mountain also named Inari which is
@@ -155,6 +230,15 @@ const Japon = () => {
           </div>
           <div className="text3">
             <p className="text-bas">
+              <div className="meteo-info-jp">
+                <span>{tempDegree3.toFixed(2)}°C</span>
+                <img
+                  src={urlMeteo3}
+                  alt={weatherApi3.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               Himeji Castle (姫路城, Himeji-jō) is a hilltop Japanese castle
               complex situated in the city of Himeji which is located in the
               Hyōgo Prefecture of Japan. The castle is regarded as the finest

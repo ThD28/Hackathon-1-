@@ -1,4 +1,4 @@
-.modal {
+.modal2 {
   position: fixed;
   top: 50%;
   right: 25%;
@@ -22,26 +22,26 @@
   }
 }
 
-.formItems {
+.formItems2 {
   display: flex;
   align-items: center;
 }
 
-.formItems h1 {
+.formItems2 h1 {
   margin-top: 0.6em;
   color: white;
 }
 
-.input-container {
+.input-container2 {
   display: flex;
   flex-direction: column;
 }
 
-.input-container label {
+.input-container2 label {
   margin-left: 1em;
 }
 
-.btns-form button {
+.btns-form2 button {
   color: #ffffff !important;
   font-size: 14px;
   text-shadow: 1px 1px 0px #7cacde;
@@ -52,29 +52,29 @@
   border: 4px solid #ffffff;
   background: #000000;
 }
-.btns-form button:hover {
+.btns-form2 button:hover {
   color: #ffffff !important;
   background: #ffffff;
 }
 
-.formPopUp form {
+.formPopUp2 form {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
 }
 
-.formPopUp label {
+.formPopUp2 label {
   color: white;
 }
 
-.formPopUp input {
+.formPopUp2 input {
   border-radius: 16px;
   height: 3em;
   width: 25em;
   padding-left: 1em;
 }
 
-.overlayPopUp {
+.overlayPopUp2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -85,7 +85,7 @@
   z-index: 1002;
 }
 
-.btn-pop-close {
+.btn-pop-close2 {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: white;
@@ -94,7 +94,7 @@
   font-weight: lighter;
 }
 
-.btn-pop-submit {
+.btn-pop-submit2 {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: white;
@@ -103,7 +103,7 @@
   font-weight: lighter;
 }
 
-.btns-form {
+.btns-form2 {
   display: flex;
   height: 5em;
   justify-content: space-evenly;
@@ -121,13 +121,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  .formItems h1 {
+  .formItems2 h1 {
     font-size: 2.5em;
     color: white;
   }
-  .modal {
+  .modal2 {
     width: 85%;
     height: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .imgpopup {
     position: absolute;
@@ -139,18 +142,18 @@
   .formPopUp form {
     gap: 3em;
   }
-  .formPopUp input {
+  .formPopUp2 input {
     width: 80em;
     height: 3.6em;
   }
-  .btns-form {
+  .btns-form2 {
     height: 0;
   }
-  .formItems h1 {
+  .formItems2 h1 {
     margin-top: 1.5em;
     color: white;
   }
-  .btns-form button {
+  .btns-form2 button {
     color: #ffffff !important;
     font-size: 14px;
     text-shadow: 1px 1px 0px #7cacde;
@@ -161,14 +164,14 @@
     border: 4px solid #ffffff;
     background: #000000;
   }
-  .btns-form button:hover {
+  .btns-form2 button:hover {
     color: #ffffff !important;
     background: #ffffff;
   }
-  .input-label-container {
+  .input-label-container2 {
     margin-bottom: 7em;
   }
-  .input-container {
+  .input-container2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
