@@ -251,19 +251,6 @@
     margin-top: 5em;
   }
 
-  .image11 {
-    width: 90%;
-    height: 25rem;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .image1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .image2-text2 {
     display: flex;
     flex-direction: row-reverse;
@@ -274,12 +261,6 @@
     margin: 1em;
     margin-top: 5em;
     gap: 1em;
-  }
-
-  .image22 {
-    width: 35rem;
-    height: 90%;
-    border-radius: 20px;
   }
 
   .text1 {
