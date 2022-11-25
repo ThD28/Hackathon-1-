@@ -7,6 +7,14 @@
   overflow: hidden;
 }
 
+.MyTravel-Button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+}
+
 .MyTravel-Title {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -72,8 +80,6 @@
     #859398 51%,
     #283048 100%
   );
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 2em;
   padding: 8px 25px;
   font-size: 10px;
