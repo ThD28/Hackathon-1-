@@ -47,6 +47,7 @@ const Formulaire = ({ open, children, onClosePopUp }) => {
           console.error(err);
         });
     }
+    window.location.reload();
   };
 
   if (!open) return null;
