@@ -21,7 +21,7 @@ const Scroll = () => {
       case "/France":
         return `rgba(0, 33, 83, 0.85)`;
       case "/Brasil":
-        return `rgba(230, 241, 0, 0.85)`;
+        return `rgba(255, 232, 86, 0.85)`;
       default:
         return `blue`;
     }
