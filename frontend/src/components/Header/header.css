@@ -3,6 +3,49 @@
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+.navBar-tel {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.navBar-tel p {
+  width: 6em;
+  color: white;
+  font-size: 1em;
+  font-family: "Permanent Marker", cursive;
+}
+
+.navBar-tel a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.navBar-tel span {
+  width: 15em;
+  color: white;
+  font-size: 1em;
+  margin-left: 0.75em;
+  font-family: "Permanent Marker", cursive;
+}
+
+.navbar_item {
+  width: 4em;
+}
+
+.navBar-tel img {
+  width: 3em;
+  margin-bottom: 3em;
+}
+.navBar-tel li {
+  list-style: none;
+  text-decoration: none;
+}
+
+>>>>>>> e4c9dc75379440ab931bedee4bcc7926fcb09d12
 .navbar__links_slideInDown {
   display: flex;
   margin-right: 3em;
@@ -20,6 +63,87 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .navbar img {
   width: 3em;
+=======
+.Hide-Navbar li {
+  display: none;
+}
+
+.show-Navbar ul {
+  animation: rotateMenu 400ms ease-in-out forwards;
+  transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.destination-travel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 2em;
+  justify-content: flex-end;
+}
+
+.destination-travel nav {
+  margin-top: 2.3em;
+  cursor: pointer;
+}
+
+.navbar button {
+  width: 10em;
+}
+
+.navbar button {
+  background-image: linear-gradient(
+    to right,
+    #1f1c2c 0%,
+    #928dab 51%,
+    #1f1c2c 100%
+  );
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.navbar button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navBar-tel p {
+    font-size: 2em;
+  }
+
+  .navBar-tel span {
+    font-size: 2em;
+  }
+
+  .destination-travel nav {
+    margin-top: 1.6em;
+  }
+>>>>>>> e4c9dc75379440ab931bedee4bcc7926fcb09d12
 }

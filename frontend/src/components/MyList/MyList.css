@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .MyList-Container {
   width: 90%;
-  background-color: #232323;
-  border-radius: 4px;
+  background-color: #89baf4;
+  border-radius: 10px;
+  box-shadow: -5px 5px 8px #77a2d4, 5px -5px 8px #9bd2ff;
   height: auto;
   padding: 0.5em;
+  border-radius: 35px;
+  padding-bottom: 2em;
 }
 
 .MyList-Container h2 {
@@ -12,12 +17,18 @@
   font-size: 22px;
 }
 
+.MyList-Title {
+  text-align: center;
+}
+
 .MyList-Text button {
   margin-top: 1em;
+  margin-left: 0.6em;
   text-align: left;
   padding-left: 0.5em;
+  border-radius: 10px;
   font-size: 18px;
-  width: 100%;
+  width: 95%;
   font-weight: bold;
 }
 
@@ -25,9 +36,9 @@
   display: block;
   color: #f2e9e4;
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 1.2em;
   border: 2px solid #f2e9e4;
-  border-radius: 8px;
+  border-radius: 35px;
 }
 
 .hideAccor {
@@ -52,6 +63,7 @@
   margin: 0.5em;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg");
   background-size: cover;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) {
