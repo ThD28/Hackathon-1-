@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Japon from "@pages/Japon/Japon";
+import France from "@pages/France/France";
 import Voyage from "@pages/Voyage/Voyage";
 import Home from "@pages/Home/Home";
 import Footer from "@components/Footer/Footer";
