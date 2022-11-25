@@ -176,8 +176,8 @@ const Italie = () => {
           </div>
           <div className="text1">
             <p className="text-bas">
-              <div className="meteo-info">
-                <a href="/#">{tempDegree1.toFixed(2)}°C</a>
+              <div className="meteo-info-it">
+                <span>{tempDegree1.toFixed(2)}°C</span>
                 <img
                   src={urlMeteo}
                   alt={weatherApi.weather.icon}
@@ -199,8 +199,8 @@ const Italie = () => {
           </div>
           <div className="text2">
             <p className="text-bas">
-              <div className="meteo-info">
-                <a href="/#">{tempDegree2.toFixed(2)}°C</a>
+              <div className="meteo-info-it">
+                <span>{tempDegree2.toFixed(2)}°C</span>
                 <img
                   src={urlMeteo2}
                   alt={weatherApi2.weather.icon}
@@ -221,8 +221,8 @@ const Italie = () => {
           </div>
           <div className="text3">
             <p className="text-bas">
-              <div className="meteo-info">
-                <a href="/#">{tempDegree3.toFixed(2)}°C</a>
+              <div className="meteo-info-it">
+                <span>{tempDegree3.toFixed(2)}°C</span>
                 <img
                   src={urlMeteo3}
                   alt={weatherApi3.weather.icon}
