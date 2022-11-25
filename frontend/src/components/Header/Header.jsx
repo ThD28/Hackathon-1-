@@ -42,7 +42,11 @@ const Header = () => {
                   Japon
                 </NavLink>
               </li>
-              <li>France</li>
+              <li>
+                <NavLink to="/France" onClick={handleShowLinks}>
+                  France
+                </NavLink>
+              </li>
               <li>Corée du Nord</li>
               <li>Canada</li>
             </ul>
