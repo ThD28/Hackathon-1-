@@ -29,7 +29,7 @@ const MyList = () => {
         {travels.map((travel) => (
           <div>
             <button type="button" onClick={handleAccor}>
-              Name : {travel.Name}
+              {travel.Name}
             </button>
             <div className={`${accor ? "showAccor" : "hideAccor"}`}>
               <div className="Accor-Country">
@@ -45,9 +45,6 @@ const MyList = () => {
                 {travel.Message}
               </div>
               <div className="Accor-Image" />
-              <div className="Accor-Button">
-                <button type="button">Delete</button>
-              </div>
             </div>
           </div>
         ))}
