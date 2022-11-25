@@ -2,7 +2,8 @@ import "./Italie.css";
 import Image111 from "@assets/coliseum.jpg";
 import Image222 from "@assets/trevifontain.jpg";
 import Image333 from "@assets/pantheon.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Italie = () => {
   const [indexSlider, setIndexSlider] = useState(0);
@@ -35,6 +36,62 @@ const Italie = () => {
         "Teuchi is a resident of Konoha and the owner of Ichiraku Ramen.He and his daughter, Ayame, consider Naruto Uzumaki their best customer and always treat him well.Naruto’s favorite dish, narutomaki, is a Japanese culinary decoration based on fish pâté, steamed, white with an orange pink spiral inside. ",
     },
   ];
+
+  const weatherTab = {
+    main: {
+      temp: 300,
+    },
+    weather: [
+      {
+        icon: "10d",
+      },
+    ],
+  };
+
+  const [weatherApi, setWeatherApi] = useState(weatherTab);
+  const [weatherApi2, setWeatherApi2] = useState(weatherTab);
+  const [weatherApi3, setWeatherApi3] = useState(weatherTab);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=41.8933203&lon=12.4829321&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi(data);
+        console.error(data);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=41.8933203&lon=12.4829321&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi2(data);
+        console.error(data);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=41.8933203&lon=12.4829321&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi3(data);
+        console.error(data);
+      });
+  }, []);
+
+  const urlMeteo = `https://openweathermap.org/img/wn/${weatherApi.weather[0].icon}@2x.png`;
+  const tempDegree1 = weatherApi.main.temp - 273.15;
+  const urlMeteo2 = `https://openweathermap.org/img/wn/${weatherApi2.weather[0].icon}@2x.png`;
+  const tempDegree2 = weatherApi2.main.temp - 273.15;
+  const urlMeteo3 = `https://openweathermap.org/img/wn/${weatherApi3.weather[0].icon}@2x.png`;
+  const tempDegree3 = weatherApi3.main.temp - 273.15;
 
   const handlePrevious = () => {
     setShowText(false);
@@ -119,6 +176,15 @@ const Italie = () => {
           </div>
           <div className="text1">
             <p className="text-bas">
+              <div className="meteo-info">
+                <a href="/#">{tempDegree1.toFixed(2)}°C</a>
+                <img
+                  src={urlMeteo}
+                  alt={weatherApi.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               The Colosseum, originally the Flavian Amphitheatre, is a huge
               ovoid amphitheatre located in the centre of the city of Rome,
               between the Esquiline and the Cælius, the largest ever built in
@@ -133,6 +199,15 @@ const Italie = () => {
           </div>
           <div className="text2">
             <p className="text-bas">
+              <div className="meteo-info">
+                <a href="/#">{tempDegree2.toFixed(2)}°C</a>
+                <img
+                  src={urlMeteo2}
+                  alt={weatherApi2.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               The Trevi Fountain is the largest and one of the most famous
               fountains in Rome. Built between 1732 and 1762, it is located in
               the Trevi River, in Piazza di Trevi, and is backed by the Poli
@@ -146,6 +221,15 @@ const Italie = () => {
           </div>
           <div className="text3">
             <p className="text-bas">
+              <div className="meteo-info">
+                <a href="/#">{tempDegree3.toFixed(2)}°C</a>
+                <img
+                  src={urlMeteo3}
+                  alt={weatherApi3.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               The Pantheon of Rome is an ancient religious building located in
               Piazza della Rotonda (Rome), built on the order of Agrippa in the
               1st century BC. Damaged by several fires, it was completely

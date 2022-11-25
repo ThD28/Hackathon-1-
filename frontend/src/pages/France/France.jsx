@@ -2,7 +2,8 @@ import "./France.css";
 import Image11 from "@assets/eiffel.jpg";
 import Image22 from "@assets/notredame.jpg";
 import Image33 from "@assets/chateauversailles.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const France = () => {
   const [indexSlider, setIndexSlider] = useState(0);
@@ -35,6 +36,62 @@ const France = () => {
         "Teuchi is a resident of Konoha and the owner of Ichiraku Ramen.He and his daughter, Ayame, consider Naruto Uzumaki their best customer and always treat him well.Naruto’s favorite dish, narutomaki, is a Japanese culinary decoration based on fish pâté, steamed, white with an orange pink spiral inside. ",
     },
   ];
+
+  const weatherTab = {
+    main: {
+      temp: 300,
+    },
+    weather: [
+      {
+        icon: "10d",
+      },
+    ],
+  };
+
+  const [weatherApi, setWeatherApi] = useState(weatherTab);
+  const [weatherApi2, setWeatherApi2] = useState(weatherTab);
+  const [weatherApi3, setWeatherApi3] = useState(weatherTab);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=48.8588897&lon=2.3200410217200766&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi(data);
+        console.error(data);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=48.8588897&lon=2.3200410217200766&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi2(data);
+        console.error(data);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=48.8588897&lon=2.3200410217200766&appid=d4f87411186c04729acba8905ecd87c7"
+      )
+      .then((response) => response.data)
+      .then((data) => {
+        setWeatherApi3(data);
+        console.error(data);
+      });
+  }, []);
+
+  const urlMeteo = `https://openweathermap.org/img/wn/${weatherApi.weather[0].icon}@2x.png`;
+  const tempDegree1 = weatherApi.main.temp - 273.15;
+  const urlMeteo2 = `https://openweathermap.org/img/wn/${weatherApi2.weather[0].icon}@2x.png`;
+  const tempDegree2 = weatherApi2.main.temp - 273.15;
+  const urlMeteo3 = `https://openweathermap.org/img/wn/${weatherApi3.weather[0].icon}@2x.png`;
+  const tempDegree3 = weatherApi3.main.temp - 273.15;
 
   const handlePrevious = () => {
     setShowText(false);
@@ -120,6 +177,15 @@ const France = () => {
           </div>
           <div className="text1">
             <p className="text-bas">
+              <div className="meteo-info">
+                <a href="/#">{tempDegree1.toFixed(2)}°C</a>
+                <img
+                  src={urlMeteo}
+                  alt={weatherApi.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               The Eiffel Tower is a 330m tall, puddled iron tower located in
               Paris, at the northwest end of the Champ-de-Mars park on the banks
               of the Seine in the 7th arrondissement. His official address is 5
@@ -137,6 +203,15 @@ const France = () => {
           </div>
           <div className="text2">
             <p className="text-bas">
+              <div className="meteo-info">
+                <a href="/#">{tempDegree2.toFixed(2)}°C</a>
+                <img
+                  src={urlMeteo2}
+                  alt={weatherApi2.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               FThe Notre-Dame Cathedral of Paris, commonly known as Notre-Dame,
               is one of the most emblematic monuments of Paris and France. It is
               located on the island of the City and is a place of Catholic
@@ -151,6 +226,15 @@ const France = () => {
           </div>
           <div className="text3">
             <p className="text-bas">
+              <div className="meteo-info">
+                <a href="/#">{tempDegree3.toFixed(2)}°C</a>
+                <img
+                  src={urlMeteo3}
+                  alt={weatherApi3.weather.icon}
+                  width="25em"
+                  height="25em"
+                />
+              </div>
               The Palace of Versailles is a historic castle and monument located
               in Versailles in Yvelines, France. It was the main residence of
               the kings of France Louis XIV, Louis XV and Louis XVI. The king,
