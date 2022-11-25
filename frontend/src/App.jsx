@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Japon from "@pages/Japon/Japon";
 import France from "@pages/France/France";
 import Italie from "@pages/Italie/Italie";
+import Brasil from "@pages/ Brasil/Brasil";
 import Voyage from "@pages/Voyage/Voyage";
 import Home from "@pages/Home/Home";
 import Footer from "@components/Footer/Footer";
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/France" element={<France />} />
         <Route exact path="/Voyage" element={<Voyage />} />
         <Route exact path="/Italie" element={<Italie />} />
+        <Route exact path="/Brasil" element={<Brasil />} />
       </Routes>
       <Scroll />
       {pathname !== "/" && <Footer />}
