@@ -12,6 +12,8 @@ const Header = () => {
         return `rgba(188, 0, 45, 0.85)`;
       case "/France":
         return `rgba(0, 33, 83, 0.85)`;
+      case "/Italie":
+        return `rgba(49, 226, 83, 0.85)`;
       case "/Voyage":
         return `rgba(137, 196, 244, 0.85 )`;
       default:
@@ -52,7 +54,11 @@ const Header = () => {
                   France
                 </NavLink>
               </li>
-              <li>Corée du Nord</li>
+              <li>
+                <NavLink to="/Italie" onClick={handleShowLinks}>
+                  Italie
+                </NavLink>
+              </li>
               <li>Canada</li>
             </ul>
           </nav>
