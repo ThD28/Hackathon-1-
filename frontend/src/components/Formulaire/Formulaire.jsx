@@ -55,7 +55,7 @@ const Formulaire = ({ open, children, onClosePopUp }) => {
     <div className="formPopUp">
       <div className="modal">
         <form className="formItems">
-          <h1>Create Your Dream Travel</h1>
+          <span>Create Your Dream Travel</span>
           <section className="input-label-container">
             <div className="input-container">
               <label htmlFor="Name">
