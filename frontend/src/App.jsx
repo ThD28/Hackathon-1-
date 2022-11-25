@@ -8,6 +8,7 @@ import Header from "@components/Header/Header";
 import Scroll from "@components/Skroll/Scroll";
 
 import "./App.css";
+import France from "@components/France/France";
 
 function App() {
   const { pathname } = useLocation();
@@ -19,7 +20,6 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Japon" element={<Japon />} />
         <Route exact path="/France" element={<France />} />
-
         <Route exact path="/Voyage" element={<Voyage />} />
       </Routes>
       <Scroll />

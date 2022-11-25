@@ -11,6 +11,8 @@ const Header = () => {
     switch (pathname) {
       case "/Japon":
         return `rgba(188, 0, 45, 0.85)`;
+      case "/France":
+        return `rgba(0, 33, 83, 0.85)`;
       case "/Voyage":
         return `rgba(137, 196, 244, 0.85 )`;
       default:
@@ -26,7 +28,11 @@ const Header = () => {
 
   return (
     <div className="navBar-tel" style={{ backgroundColor: navStyle() }}>
-      <span>Travel Maker</span>
+      <span>
+        <NavLink to="/" onClick={handleShowLinks}>
+          Travel Maker
+        </NavLink>
+      </span>
       <div className="destination-travel">
         <section
           className={`navbar ${showLinks ? "show-Navbar" : "Hide-Navbar"}`}
