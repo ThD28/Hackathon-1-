@@ -224,9 +224,19 @@
   width: 7em;
 }
 
-.meteo-info a {
+.meteo-info-bz {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgba(230, 241, 0, 0.85);
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.meteo-info-bz span {
   text-decoration: none;
-  color: black;
+  color: white;
   margin-right: 0.5em;
 }
 

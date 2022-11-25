@@ -13,9 +13,9 @@ const Header = () => {
       case "/France":
         return `rgba(0, 33, 83, 0.85)`;
       case "/Italie":
-        return `rgba(49, 226, 83, 0.85)`;
+        return `rgba(48, 211, 0, 0.85)`;
       case "/Brasil":
-        return `rgba(234, 241, 37, 0.85)`;
+        return `rgba(230, 241, 0, 0.85)`;
       case "/Voyage":
         return `rgba(137, 196, 244, 0.85 )`;
       default:
