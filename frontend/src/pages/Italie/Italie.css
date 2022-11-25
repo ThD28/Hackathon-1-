@@ -138,12 +138,11 @@
 }
 
 .meteo-info-it {
-  border: 1px solid black;
   width: 98%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  background-color: rgba(49, 226, 83, 0.85);
+  background-color: rgba(48, 211, 0, 0.85);
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   padding-bottom: 0.25em;

@@ -50,7 +50,7 @@ const Brasil = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=35.4874565&lon=138.8078281&appid=d4f87411186c04729acba8905ecd87c7"
+        "https://api.openweathermap.org/data/2.5/weather?lat=-22.9110137&lon=-43.2093727&appid=d4f87411186c04729acba8905ecd87c7"
       )
       .then((response) => response.data)
       .then((data) => {
@@ -61,7 +61,7 @@ const Brasil = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=35.021041&lon=135.7556075&appid=d4f87411186c04729acba8905ecd87c7"
+        "https://api.openweathermap.org/data/2.5/weather?lat=-12.9822499&lon=-38.4812772&appid=d4f87411186c04729acba8905ecd87c7"
       )
       .then((response) => response.data)
       .then((data) => {
@@ -72,7 +72,7 @@ const Brasil = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=34.8153529&lon=134.6854793&appid=d4f87411186c04729acba8905ecd87c7"
+        "https://api.openweathermap.org/data/2.5/weather?lat=-22.9110137&lon=-43.2093727&appid=d4f87411186c04729acba8905ecd87c7"
       )
       .then((response) => response.data)
       .then((data) => {
@@ -173,8 +173,8 @@ const Brasil = () => {
           </div>
           <div className="text1">
             <p className="text-bas">
-              <div className="meteo-info">
-                <a href="/#">{tempDegree1.toFixed(2)}°C</a>
+              <div className="meteo-info-bz">
+                <span>{tempDegree1.toFixed(2)}°C</span>
                 <img
                   src={urlMeteo}
                   alt={weatherApi.weather.icon}
@@ -196,8 +196,8 @@ const Brasil = () => {
           </div>
           <div className="text2">
             <p className="text-bas">
-              <div className="meteo-info">
-                <a href="/#">{tempDegree2.toFixed(2)}°C</a>
+              <div className="meteo-info-bz">
+                <span>{tempDegree2.toFixed(2)}°C</span>
                 <img
                   src={urlMeteo2}
                   alt={weatherApi2.weather.icon}
@@ -220,8 +220,8 @@ const Brasil = () => {
           </div>
           <div className="text3">
             <p className="text-bas">
-              <div className="meteo-info">
-                <a href="/#">{tempDegree3.toFixed(2)}°C</a>
+              <div className="meteo-info-bz">
+                <span>{tempDegree3.toFixed(2)}°C</span>
                 <img
                   src={urlMeteo3}
                   alt={weatherApi3.weather.icon}
