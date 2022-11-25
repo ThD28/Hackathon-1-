@@ -1,34 +1,34 @@
-import "./France.css";
-import Image11 from "@assets/eiffel.jpg";
-import Image22 from "@assets/notredame.jpg";
-import Image33 from "@assets/chateauversailles.jpg";
-import { useState, useEffect } from "react";
+import "./Brasil.css";
+import Image1111 from "@assets/christ.jpg";
+import Image2222 from "@assets/diamantina.jpg";
+import Image3333 from "@assets/tijuca.jpg";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const France = () => {
+const Brasil = () => {
   const [indexSlider, setIndexSlider] = useState(0);
   const [showText, setShowText] = useState(false);
 
   const array = [
     {
-      src: "src/assets/france-1.jpg",
-      description: "Paris",
+      src: "src/assets/brasil-1.jpg",
+      description: "Sao Luis",
     },
     {
-      src: "src/assets/france-2.jpg",
-      description: "the Louvre Museum of Paris",
+      src: "src/assets/brasil-2.jpg",
+      description: "Rio de Janeiro",
     },
     {
-      src: "src/assets/france-3.jpg",
-      description: "Alsace",
+      src: "src/assets/brasil-3.jpg",
+      description: "Slums in Rio de Janeiro",
     },
     {
-      src: "src/assets/france-4.jpg",
-      description: "The castle of Mont Saint Michel",
+      src: "src/assets/brasil-4.jpg",
+      description: "Sao Paulo",
     },
     {
-      src: "src/assets/france-5.jpg",
-      description: "The French Riviera ",
+      src: "src/assets/brasil-5.jpg",
+      description: "Iguazu Falls",
     },
   ];
 
@@ -50,7 +50,7 @@ const France = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=48.8588897&lon=2.3200410217200766&appid=d4f87411186c04729acba8905ecd87c7"
+        "https://api.openweathermap.org/data/2.5/weather?lat=35.4874565&lon=138.8078281&appid=d4f87411186c04729acba8905ecd87c7"
       )
       .then((response) => response.data)
       .then((data) => {
@@ -61,7 +61,7 @@ const France = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=48.8588897&lon=2.3200410217200766&appid=d4f87411186c04729acba8905ecd87c7"
+        "https://api.openweathermap.org/data/2.5/weather?lat=35.021041&lon=135.7556075&appid=d4f87411186c04729acba8905ecd87c7"
       )
       .then((response) => response.data)
       .then((data) => {
@@ -72,7 +72,7 @@ const France = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=48.8588897&lon=2.3200410217200766&appid=d4f87411186c04729acba8905ecd87c7"
+        "https://api.openweathermap.org/data/2.5/weather?lat=34.8153529&lon=134.6854793&appid=d4f87411186c04729acba8905ecd87c7"
       )
       .then((response) => response.data)
       .then((data) => {
@@ -108,11 +108,11 @@ const France = () => {
 
   return (
     <div className="japan">
-      <div className="france-body">
-        <h2 className="title-japon">France</h2>
+      <div className="brasil-body">
+        <h2 className="title-japon">Brasil</h2>
       </div>
       <div className="history">
-        <h3>History of France</h3>
+        <h3>History of Brasil</h3>
         <div className="container">
           <div>
             <img
@@ -160,20 +160,21 @@ const France = () => {
         </div>
         <div className="info">
           <p>
-            France is a transcontinental sovereign state whose metropolitan
-            territory extends into Western Europe and whose ultramarine
-            territory extends into the Indian, Atlantic, Pacific, Antarctic6 and
-            South America .{" "}
+            Brazil (in Portuguese: Brasil/bɾaůziw/), the Federative Republic of
+            Brazil (República Federativa do Brasil), is the largest state in
+            Latin America. Brazil, designated as a continent-country, is the
+            fifth largest country in the world, behind Russia, Canada, the
+            United States and China.{" "}
           </p>
         </div>
         <div className="image1-text1">
           <div className="image1">
-            <img className="image11" src={Image11} alt="eiffel" />
+            <img className="image11" src={Image1111} alt="christ" />
           </div>
           <div className="text1">
             <p className="text-bas">
-              <div className="meteo-info-fr">
-                <span>{tempDegree1.toFixed(2)}°C</span>
+              <div className="meteo-info">
+                <a href="/#">{tempDegree1.toFixed(2)}°C</a>
                 <img
                   src={urlMeteo}
                   alt={weatherApi.weather.icon}
@@ -181,25 +182,22 @@ const France = () => {
                   height="25em"
                 />
               </div>
-              The Eiffel Tower is a 330m tall, puddled iron tower located in
-              Paris, at the northwest end of the Champ-de-Mars park on the banks
-              of the Seine in the 7th arrondissement. His official address is 5
-              Avenue Anatole-France. Built in two years by Gustave Eiffel and
-              his collaborators for the 1889 Paris World Exhibition, celebrating
-              the centenary of the French Revolution, and initially named the
-              «300-metre tower», it has become the symbol of the French capital
-              and a leading tourist site.
+              Christ the Redeemer is a large statue of Christ dominating the
+              city of Rio de Janeiro in Brazil, from the top of Mount Corcovado.
+              Over the years, it has become one of the city’s internationally
+              recognized emblems, as well as Pain de Sucre, Copacabana beach and
+              carnival.
             </p>
           </div>
         </div>
         <div className="image2-text2">
           <div className="image2">
-            <img className="image22" src={Image22} alt="notredame" />
+            <img className="image22" src={Image2222} alt="diamantina" />
           </div>
           <div className="text2">
             <p className="text-bas">
-              <div className="meteo-info-fr">
-                <span>{tempDegree2.toFixed(2)}°C</span>
+              <div className="meteo-info">
+                <a href="/#">{tempDegree2.toFixed(2)}°C</a>
                 <img
                   src={urlMeteo2}
                   alt={weatherApi2.weather.icon}
@@ -207,22 +205,23 @@ const France = () => {
                   height="25em"
                 />
               </div>
-              FThe Notre-Dame Cathedral of Paris, commonly known as Notre-Dame,
-              is one of the most emblematic monuments of Paris and France. It is
-              located on the island of the City and is a place of Catholic
-              worship, seat of the Archdiocese of Paris, dedicated to the Virgin
-              Mary.
+              The Chapada Diamantina National Park is a natural park of Brazil
+              located in the environment of the Chapada Diamantina, in the state
+              of Bahia; the park is located about 400 km from Salvador, the
+              state capital. Created in 1985 by federal decree, it covers an
+              area of 1,520 km² and includes the main municipalities of Andaraí,
+              Ibicoara, Itaetê, Lençóis, Mucugê and Palmeiras.-
             </p>
           </div>
         </div>
         <div className="image3-text3">
           <div className="image3">
-            <img className="image33" src={Image33} alt="himiji" />
+            <img className="image33" src={Image3333} alt="tijuca" />
           </div>
           <div className="text3">
             <p className="text-bas">
-              <div className="meteo-info-fr">
-                <span>{tempDegree3.toFixed(2)}°C</span>
+              <div className="meteo-info">
+                <a href="/#">{tempDegree3.toFixed(2)}°C</a>
                 <img
                   src={urlMeteo3}
                   alt={weatherApi3.weather.icon}
@@ -230,16 +229,12 @@ const France = () => {
                   height="25em"
                 />
               </div>
-              The Palace of Versailles is a historic castle and monument located
-              in Versailles in Yvelines, France. It was the main residence of
-              the kings of France Louis XIV, Louis XV and Louis XVI. The king,
-              court, and government permanently resided there from 6 May 1682 to
-              6 October 1789, except for the years of the Regency from 1715 to
-              1723. Wanted by Louis XIV to glorify the French monarchy, the
-              castle is the most important monument of his reign and one of the
-              masterpieces of classical architecture. He had a great influence
-              in Europe in the 18th and 19th centuries in the field of
-              architecture and decorative arts.
+              The Tijuca National Park is located in the city of Rio de Janeiro,
+              Brazil. Among the tourist elements of the park, trails, caves and
+              waterfalls, are famous landmarks of the city, such as the Stone of
+              the Gávea, the Corcovado and the statue of Christ the Redeemer, or
+              the Tijuca peak, the highest point of the park, 1022 meters above
+              sea level
             </p>
           </div>
         </div>
@@ -248,4 +243,4 @@ const France = () => {
   );
 };
 
-export default France;
+export default Brasil;

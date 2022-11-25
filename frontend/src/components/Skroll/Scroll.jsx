@@ -10,6 +10,8 @@ const Scroll = () => {
   const { pathname } = useLocation();
   const scrollStyle = () => {
     switch (pathname) {
+      case "/":
+        return `rgba(102, 98, 120, 0.85)`;
       case "/Japon":
         return `rgba(188, 0, 45, 0.85 )`;
       case "/Italie":
@@ -18,6 +20,8 @@ const Scroll = () => {
         return `rgba(137, 196, 244, 0.85 )`;
       case "/France":
         return `rgba(0, 33, 83, 0.85)`;
+      case "/Brasil":
+        return `rgba(234, 241, 37, 0.85)`;
       default:
         return `blue`;
     }

@@ -12,28 +12,23 @@ const Japon = () => {
   const array = [
     {
       src: "src/assets/japan-1.jpg",
-      description:
-        "Brock is one of the best anime chefs and someone who mastered his culinary prowess as a child. Brock is also known for cooking high-end dishes that never disappoint his companions or Pokémon and always take his utensils with him wherever he goes.",
+      description: "Tokyo",
     },
     {
       src: "src/assets/japan-2.jpg",
-      description:
-        "Sanji is a very talented 21-year-old cook, born on March 2, from a noble family in North Blue but grew up in East Blue. He surpasses every cook he’s ever met except maybe his mentor, Zeff. He has a deep respect for all that concerns the art of cooking.",
+      description: "Osaka in night mode ",
     },
     {
       src: "src/assets/japan-3.jpg",
-      description:
-        "Soma has been interested in cooking since childhood, an interest he shares with his father Jôichirô Yukihira.Sôma was, very quickly, able to cook alone some family dishes.Sôma did not hesitate to challenge her father in culinary battles",
+      description: "Osaka in day mode",
     },
     {
       src: "src/assets/japan-4.jpg",
-      description:
-        "Xavier is a good cook who lives in La Loupe. He cooks JavaScript. He is good at React recipes. Sometimes he plays Zelda during his breaks. ",
+      description: "Tokyo streets",
     },
     {
       src: "src/assets/japan-5.jpg",
-      description:
-        "Teuchi is a resident of Konoha and the owner of Ichiraku Ramen.He and his daughter, Ayame, consider Naruto Uzumaki their best customer and always treat him well.Naruto’s favorite dish, narutomaki, is a Japanese culinary decoration based on fish pâté, steamed, white with an orange pink spiral inside. ",
+      description: "The ornamental cherry trees of Japan. (Sakura)",
     },
   ];
 

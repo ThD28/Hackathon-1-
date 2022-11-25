@@ -17,7 +17,7 @@ const Formulaire = ({ open, children, onClosePopUp }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let { Name, Country, City, Message, Img } = dataForm;
+    const { Name, Country, City, Message, Img } = dataForm;
     if (!Name || !Country || !City) {
       alert("You need to complete all necessary input");
     } else {
